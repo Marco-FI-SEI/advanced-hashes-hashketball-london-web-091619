@@ -230,7 +230,7 @@ def long_name_steals_a_ton?
   steal_count = 0
   name = ""
   players.each do |k, v|
-    name = k if v[:steals] >= steal_count
+    name = k if v[:steals] > steal_count
   end
   name == longest_name ? true : false
 end
