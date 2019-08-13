@@ -216,7 +216,11 @@ end
 def player_with_the_longest_name
   players = players_hash("All")
   name_count = 0
-  players.each { |k, v| 
+  name = ""
+  players.each do |k, v|
+    name = k if k.size >= name.size
+  end
+  name
 end
 
 
