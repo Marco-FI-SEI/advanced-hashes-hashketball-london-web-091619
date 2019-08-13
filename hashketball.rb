@@ -213,7 +213,7 @@ def winning_team
   bn_players_total_points > ch_players_total_points ? "Brooklyn Nets" : "Charlotte Hornets"
 end
 
-def player_with_the_longest_name
+def player_with_longest_name
   players = players_hash("All")
   name_count = 0
   name = ""
